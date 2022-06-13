@@ -62,6 +62,7 @@ De uma forma macro, essa camada pode ser subdivida em outras 2 subcamadas:
 | test                 | Biblioteca de testes                                            | https://pub.dev/packages/test#running-tests-on-nodejs |
 | mocktail             | Biblioteca que simplifica a criaçao de mocks                    | https://pub.dev/packages/mocktail                     |
 | bloc_test            | Pacote que facilita os testes dos Blocs                         | https://pub.dev/packages/bloc_test                    |
+| ndialog              | Pacote que facilita a criação de dialogs                        | https://pub.dev/packages/ndialog/example              |
 
 ## Testes
 
