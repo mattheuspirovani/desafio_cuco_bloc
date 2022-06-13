@@ -11,11 +11,9 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   group('AppBloc', () {
     late AppBloc appBloc;
-    late user_repository.UserRepository userRepository;
 
     setUp(() async {
       appBloc = AppBloc();
-      userRepository = MockUserRepository();
     });
 
     blocTest<AppBloc, AppState>(

@@ -2,8 +2,7 @@ import 'package:desafio_cuco_bloc/friend/widgets/friend_list_failed_load_widget.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:friend_repository/friend_repository.dart';
-import 'package:top_snackbar_flutter/custom_snack_bar.dart';
-import 'package:top_snackbar_flutter/top_snack_bar.dart';
+import 'package:ndialog/ndialog.dart';
 
 import '../bloc/friend_bloc.dart';
 import '../widgets/widgets.dart';
@@ -28,14 +27,31 @@ class FriendView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<FriendBloc, FriendState>(
-      listener: (context, state) {
+      listener: (context, state) async {
         if (state is FriendListFailedLoading) {
-          showTopSnackBar(
-            context,
-            const CustomSnackBar.error(
-              message: "Failed to load friend list.",
+          await NAlertDialog(
+            dialogStyle: DialogStyle(titleDivider: true),
+            title: const Text("Ooopps"),
+            content: Text(
+              "Failed to load your friend list... ",
+              style: Theme.of(context).textTheme.headline6,
+              textAlign: TextAlign.center,
             ),
-          );
+            actions: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(
+                    child: Text(
+                      "Ok",
+                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                          color: Theme.of(context).colorScheme.onPrimary),
+                    ),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    }),
+              )
+            ],
+          ).show(context);
         }
       },
       builder: (context, state) {
