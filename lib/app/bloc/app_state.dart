@@ -1,6 +1,6 @@
 part of 'app_bloc.dart';
 
-enum ConnectionStatus { unknow, online, offile }
+enum ConnectionStatus { unknow, online, offline }
 
 @immutable
 abstract class AppState extends Equatable {}

@@ -35,7 +35,7 @@ De uma forma macro, essa camada pode ser subdivida em outras 2 subcamadas:
  * Apresentação
     * Exibe as informações do app e recebe os estimulos do usuário. 
  * Lógica de negócio
-    * Essa subcamada é representada pelos Blocs, que reagem ou emitem eventos que cuminam em mudanças na interface/estado da aplicação. Interagem diretamente com a camada de Domínio para obter as informações necessárias.
+    * Essa subcamada é representada pelos Blocs, que reagem ou emitem eventos que culminam em mudanças na interface/estado da aplicação. Interagem diretamente com a camada de Domínio para obter as informações necessárias.
     * É muito importante frisar que um Bloc nunca deve se comunicar diretamente com outro Bloc, a comunicação deve ser indiretamente através da camada de Domínio ou, em alguns casos excepcionais, na camada de apresentação. 
 
    
