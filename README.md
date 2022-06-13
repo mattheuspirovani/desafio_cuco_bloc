@@ -12,7 +12,7 @@ O app está segregado em camadas, o que nos beneficia quanto:
 * Reuso dos componentes/pacotes em outros projetos.
 
 #### Camada de Dados
-A camada mais inferior da aplicação e tem como responsabilidade lidar com operações de obtenção de dados,
+A camada mais inferior da aplicação e que tem como responsabilidade lidar com operações de obtenção de dados,
 como, dados de armazenamento local, comunicação com APIs, etc.
 
 >  Um exemplo de componente dessa camada é o pacote **random_user_api**.
@@ -29,8 +29,8 @@ De uma forma macro, essa camada pode ser subdivida em outras 2 subcamadas:
  * Apresentação
     * Exibe as informações do app e recebe os estimulos do usuário. 
  * Lógica de negócio
-    * Essa subcamada é representada pelos Blocs, que reagem ou emitem eventos aos quais cuminam nas mudanças de interface. Interagem diretamente com a camada de Domínio para obter as informações necessárias.
-    * É muito importante frisar que um Bloc nunca deve se comunicar diretamente com outro Bloc, toda comunicação deve ser indireta através da camada de Domínio. 
+    * Essa subcamada é representada pelos Blocs, que reagem ou emitem eventos que cuminam em mudanças na interface/estado da aplicação. Interagem diretamente com a camada de Domínio para obter as informações necessárias.
+    * É muito importante frisar que um Bloc nunca deve se comunicar diretamente com outro Bloc, a comunicação deve ser indiretamente através da camada de Domínio ou, em alguns casos excepcionais, na camada de apresentação. 
 
    
 
