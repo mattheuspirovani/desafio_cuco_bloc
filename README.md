@@ -2,6 +2,10 @@
 
 Como resposta ao desafio criei esse app utilizando bloc.
 
+## Funcionalidades
+
+<img width="849" alt="Captura de Tela 2022-06-13 às 10 04 12" src="https://user-images.githubusercontent.com/17201784/173360088-25af3043-724b-456c-a583-58b2c073f602.png">
+
 ## Arquitetura do App
 
 O app está segregado em camadas, o que nos beneficia quanto:
@@ -41,17 +45,27 @@ De uma forma macro, essa camada pode ser subdivida em outras 2 subcamadas:
 
 ## Dependências
 
-| Nome                 | Descriçao                                                       | Link                                          |
-|----------------------|-----------------------------------------------------------------|-----------------------------------------------|
-| flutter_bloc         | Biblioteca de Widgets que facilitam a implementaçao do bloc     | https://pub.dev/packages/flutter_bloc         |
-| equatable            | Pacote que ajuda na implementação de igualdade baseada em valor | https://pub.dev/packages/equatable            |
-| top_snackbar_flutter | Pacote que facilita a exibição de snackbars customizados        | https://pub.dev/packages/top_snackbar_flutter |
-| connectivity_plus    | Plugin que permite descobrir o estado de conectividade da rede  | https://pub.dev/packages/connectivity_plus    |
-| flutter_animator     | Pacote para implementação de animaçoes                          | https://pub.dev/packages/flutter_animator     |
-| flex_color_scheme    | Pacote com belos temas para Material design                     | https://pub.dev/packages/flex_color_scheme    |
-| skeletons            | Pacote para a construção de skeletons screensskeletons          | https://pub.dev/packages/skeletons            |
-| cached_network_image | Pacote para carregar e armazenar imagens em cache               | https://pub.dev/packages/cached_network_image |
-| path_provider        | Plugin para facilitar a interação com o sistema de arquivos      | https://pub.dev/packages/path_provider        |
+| Nome                 | Descriçao                                                       | Link                                                  |
+|----------------------|-----------------------------------------------------------------|-------------------------------------------------------|
+| flutter_bloc         | Biblioteca de Widgets que facilitam a implementaçao do bloc     | https://pub.dev/packages/flutter_bloc                 |
+| equatable            | Pacote que ajuda na implementaçao de igualdade baseada em valor | https://pub.dev/packages/equatable                    |
+| top_snackbar_flutter | Pacote que facilita a exibicao de snackbars customizados        | https://pub.dev/packages/top_snackbar_flutter         |
+| connectivity_plus    | Plugin que permite descobrir o estado de conectividade da rede  | https://pub.dev/packages/connectivity_plus            |
+| flutter_animator     | Pacote para implementaçao de animaçoes                          | https://pub.dev/packages/flutter_animator             |
+| flex_color_scheme    | Pacote com belos temas para Material design                     | https://pub.dev/packages/flex_color_scheme            |
+| skeletons            | Pacote para a construçao de skeletons screensskeletons          | https://pub.dev/packages/skeletons                    |
+| cached_network_image | Pacote para carregar e armazenar imagens em cache               | https://pub.dev/packages/cached_network_image         |
+| path_provider        | Plugin para localizaçao de arquivos no sistema de arquivos      | https://pub.dev/packages/path_provider                |
+| json_annotation      | Pacote que facilita a serializacao e deserialiazacao de classes | https://pub.dev/packages/json_annotation              |
+| test                 | Biblioteca de testes                                            | https://pub.dev/packages/test#running-tests-on-nodejs |
+| mocktail             | Biblioteca que simplifica a criaçao de mocks                    | https://pub.dev/packages/mocktail                     |
+| bloc_test            | Pacote que facilita os testes dos Blocs                         | https://pub.dev/packages/bloc_test                    |
+
+## Testes
+
+Testes são fundamentais para qualquer aplicação, por isso eles não devem nunca ser suprimidos. No projeto há testes para as 3 camadas, para facilitar
+os testes com os blocs está sendo usado o pacote bloc_test que reduz consideravelmente a complexidade para testá-los. Os testes estão bem superficiais,
+mas estão devidamente configurados e funcionais.
 
 ## Setup
 
