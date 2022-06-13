@@ -4,6 +4,8 @@ Como resposta ao desafio criei esse app utilizando bloc.
 
 ## Funcionalidades
 
+Abaixo um pequena diagrama das funcionalidades que deveriam ser implementadas.
+
 <img width="849" alt="Captura de Tela 2022-06-13 às 10 04 12" src="https://user-images.githubusercontent.com/17201784/173360088-25af3043-724b-456c-a583-58b2c073f602.png">
 
 ## Arquitetura do App
